@@ -7,6 +7,8 @@ body{
 	padding: 0;
 }
 
+
+/*CSS for Container*/
 .container{
 	background-color: #FEE3AD;
 	width: 100vw;
@@ -61,7 +63,10 @@ body{
 				font-size: 1.4rem;
 				font-family: 'Sawarabi Mincho', sans-serif;				
 			}
+/*ends here*/
 
+
+/*CSS for footer*/
 .footer{
 	background-color: #FEE3AD;
 	width: 98%;
@@ -82,8 +87,10 @@ body{
 		text-align: center;
 		font-size: 1.1rem;
 	}
+/*ends here*/
 
 
+/*Media Query for xs sized screen sizes*/
 @media only screen and (max-width: 567px){
 	#para-one{			
 			padding-top: 3vh;
@@ -103,9 +110,9 @@ body{
 	ul li a{
 		font-size: 1.2rem;		
 	}
-	#footer{
-		width: 95%;
-		margin-left: 0.4vw;
+	.footer{
+		width: 96.5%;
+		margin-left: 1vw;
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 	}	
@@ -113,3 +120,4 @@ body{
 		font-size: 1rem;
 	}
 }
+/*ends here*/
