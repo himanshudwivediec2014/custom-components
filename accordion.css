@@ -20,7 +20,8 @@ body{
     display: flex;
     flex-direction: column;    
 }
-    h3{
+    h3{/*
+        margin-top: 2vh;*/
         margin-bottom: 2vh;
         width: 40vw;
         padding-left: 1vw;
@@ -69,7 +70,9 @@ body{
         width: 45vw;
         font-size: 3rem;
     }
-
+    .section .para{
+        width: 42vw;
+    }
     #para1, #para2, #para3, #para4{
         text-align: center;
     }

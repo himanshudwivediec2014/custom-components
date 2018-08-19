@@ -9,6 +9,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	align-items: center;
 	background-color: #FCECB2; 
 }
 /*ends here*/
@@ -23,6 +24,7 @@ body{
 	}
 	ul{
 		margin-top: 0;
+		margin-bottom: 0;
 		padding: 0;
 		background-color: grey;
 		color: white;
@@ -77,17 +79,40 @@ body{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-left: 8vw;
 	font-size: 2.5rem;
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
 }
-	.para p{
+	.para #para{
 		height: 100%;
-		padding: 8vh 3vw 0 3vw;
+		padding: 6vh 3vw 0 3vw;
 		width: 100%;
 	}
-/*ends here*/	
+/*ends here*/
+
+
+/*CSS for footer*/
+.footer{
+	background-color: #FEE3AD;
+	width: 98%;
+	bottom: 0;
+	left: 0;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+	margin-left: 0.8vw;
+	margin-bottom: 1vh;
+	position: absolute;
+	border: 2px solid lightgrey;
+	border-radius: 1vw;
+	box-shadow: 4px 4px 4px grey;
+	display: flex;
+	justify-content: center;
+}
+	.footer span{
+		text-align: center;
+		font-size: 1.1rem;
+	}	
+/*ends here*/
 
 
 /*Media Query for md screen sizes*/
@@ -113,16 +138,23 @@ body{
 
 	.para{
 		width: auto;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 	#para{
 		height: 100%;
-		padding: 5vh 3vw 0 3vw;
+		padding: 0 3vw 0 3vw;
 		margin-top: 0;
 		width: 100%;
 	}
 	.show{
 		display: flex;
+	}
+	.footer{
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+	.footer span{
+		font-size: 0.8rem
 	}
 }	
 /*ends here*/

@@ -151,10 +151,10 @@ body{
 	border-radius: 1.5vw;
 	box-shadow: 4px 4px 4px grey;	
 }	
-	.footer h6{
+	.footer span{
 		text-align: center;
-		margin-top: 3.2vh;
-		margin-bottom: 3.2vh;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
 		font-size: 1.2rem;
 	}        	
 /*ends here*/
@@ -184,11 +184,13 @@ body{
 	    margin-bottom: 2vh;
 	    order: 2;
 	}
-
 	.modal-body #para{
 		font-size: 1.4rem;
 		padding: 2vh 3vw 3vh 3vw;
 		order: 1;
+	}
+	.footer span{
+		font-size: 1rem;
 	}
 }
 /*ends here*/
