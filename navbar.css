@@ -1,0 +1,128 @@
+:root{
+	font-size: 16px;
+}
+
+/*CSS for body*/
+body{
+	margin: 0;
+	padding: 0;	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #FCECB2; 
+}
+/*ends here*/
+
+
+/*CSS for Navbar*/
+	nav{
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	ul{
+		margin-top: 0;
+		padding: 0;
+		background-color: grey;
+		color: white;
+		font-size: 1.2rem;
+		font-weight: bold;
+		font-family: 'Sawarabi Mincho', sans-serif;
+		display: flex;
+		flex-direction: row;
+	}
+		ul li{
+			margin: 0.5vh 0 0.5vh 0;
+			padding: 2.5vh 2vw 2.5vh 2vw;
+			list-style-type: none;
+			transition: all 0.2s ease 0.1s;
+		}
+
+		ul li:hover{
+			background-color: lightgrey;
+			color: black;
+			font-weight: bold;
+			border-radius: 3vw;
+		}
+			ul li a{
+				text-decoration: none;
+			}
+/*ends here*/
+
+
+/*CSS for menu toggle icon*/			
+.toggle{
+	background-color: lightgrey;
+	display: flex;			
+	justify-content: flex-end;
+}		
+	#menu-toggle{
+		display: none;
+		font-size: 2.4rem;
+		padding: 1.5vh 2vw 1.5vh 2vw;
+		transition: all 0.4s ease 0.1s;
+	}
+
+	#menu-toggle:hover{
+		cursor: pointer;
+		transform: scale(1.2, 1.2);
+	}
+/*ends here*/	
+
+
+/*CSS for page description*/
+.para{
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 8vw;
+	font-size: 2.5rem;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+}
+	.para p{
+		height: 100%;
+		padding: 8vh 3vw 0 3vw;
+		width: 100%;
+	}
+/*ends here*/	
+
+
+/*Media Query for md screen sizes*/
+@media only screen and (max-width: 768px){
+	#menu-toggle{
+		display: flex;
+	}
+
+	ul{
+		display: none;
+		flex-direction: column;
+		border-bottom-left-radius: 2vw;
+		border-bottom-right-radius: 2vw;
+		align-items: center;
+	}
+	
+	ul li{
+		width: auto;
+		padding: 1.5vh 4vw 1.5vh 4vw;
+		margin:0.5vh 0 0 0;
+		text-align: center;
+	}
+
+	.para{
+		width: auto;
+		font-size: 1.8rem;
+	}
+	#para{
+		height: 100%;
+		padding: 5vh 3vw 0 3vw;
+		margin-top: 0;
+		width: 100%;
+	}
+	.show{
+		display: flex;
+	}
+}	
+/*ends here*/

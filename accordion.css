@@ -1,0 +1,86 @@
+:root{
+    font-size: 16px;
+}
+/*CSS for body*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FDF5D8;   
+}
+/*ends here*/
+
+
+/*CSS for Accordion container*/
+.accordion{
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;    
+}
+    h3{
+        margin-bottom: 2vh;
+        width: 40vw;
+        padding-left: 1vw;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Tangerine', cursive;
+    }    
+        .section .btn{
+            width: 40vw;
+            font-size: 3.6rem;
+            font-family: 'Tangerine', cursive;
+            margin-left: 0.6vw;
+            padding-left: 1vw;
+            padding-right: 1vw;        
+            background-color: grey;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.2s ease 0.1s, color 0.2s ease 0.1s;
+        }
+
+        .section .btn:hover{
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+        }
+
+        .section .para{
+            width: 37vw;
+            margin-left: 0.8vw;
+            padding: 1.2vw;
+            font-size: 1.4rem;
+            font-family: 'Kalam', cursive;
+            text-align: justify;
+            border: 1px solid grey;
+            border-radius: 8px;
+        }
+/*ends here*/
+
+
+/*Media Query extra small sized screen sizes*/
+@media only screen and (max-width: 567px){
+    #heading{
+        font-size: 3.2rem;
+    }
+    #btn1, #btn2, #btn3, #btn4{
+        width: 45vw;
+        font-size: 3rem;
+    }
+
+    #para1, #para2, #para3, #para4{
+        text-align: center;
+    }
+}
+/*ends here*/
+
+
+/*Media Query for small sized screen sizes*/
+@media only screen and (min-width: 568px) and (max-width: 768px){
+     #para1, #para2, #para3, #para4{
+        text-align: center;
+    }
+}
+/*ends here*/

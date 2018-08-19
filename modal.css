@@ -1,0 +1,240 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #FCECB2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*CSS for page-header*/
+.page-header{  
+    width: 100%;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    align-items: center;   
+}
+	.page-header .trigger{
+		width: 10vw;
+		padding: 10px 5px 10px 5px;
+	    border-radius: 2vw;
+	    border: 2px solid lightgrey;
+	    background: #3498db;
+	    color: white;
+	    font-size: 1.6rem;
+	    font-weight: bold;
+	    font-family: 'Lora', serif;
+	    transition: all 0.2s ease 0.1s;
+	}
+
+	.page-header .trigger:hover{
+	    background: white;
+	    color: #3498DB;
+	    cursor: pointer;
+	}
+/*ends here*/
+
+
+/*CSS for modal-popup*/	
+.modal-popup{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+}
+/*ends here*/
+
+
+	/*CSS for Modal-Content*/
+	.modal-popup .modal-content{
+		background: white;
+		width: 40vw;
+		height: auto;
+		margin-left: 27vw;
+		margin-top: 25vh;
+		border-radius: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+		.modal-content .modal-header{
+			background-color: lightblue;
+			width: 100%;			
+			border-top-left-radius: 10px;
+        	border-top-right-radius: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+			.modal-content .modal-header h1{
+				padding-left: 2vw;
+			}
+			.modal-content .modal-header span{
+				padding-right: 2vw;
+				padding-top: 3vh;
+				font-weight: bolder;
+	            font-size: 2rem;
+			}
+			.modal-content .modal-header span:hover{
+				cursor: pointer;
+			}
+	/*ends here*/	
+
+
+		/*CSS for Modal-Body*/
+		.modal-content .modal-body{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;            
+		}
+			.modal-content .modal-body p{
+				padding: 2vh 4vw 3vh 4vw;
+				font-family: 'Dancing Script', cursive;
+	            font-size: 1.8rem;
+	            text-align: center;
+			}
+		/*ends here*/	
+
+
+		/*CSS for Modal-Footer*/
+		.modal-content .modal-footer{
+	        display: flex;
+	        justify-content: center;
+	        width: 100%;
+	        margin-top: -4.6vh;
+	        border-bottom-left-radius: 1vw;
+	        border-bottom-right-radius: 1vw;
+	    }   
+			.modal-footer #close{
+	            padding: 15px;
+	            width: 10vw;
+	            border-radius: 5px;
+	            background: #3498db;
+	            color: white;
+	            font-size: 1.2rem;
+	            font-family: 'Lora', serif;
+	            margin-top: 2.6vh;
+	            margin-bottom: 2vh;
+	            border: 2px solid lightgrey;
+	            border-radius: 3vw; 
+	            transition: all 0.2s ease 0.1s;
+        	}
+        	.modal-footer #close:hover{
+	            background: white;
+	            color: #3498db;
+	            border: 2px solid grey;
+	            cursor: pointer;
+        	}
+        /*ends here*/
+        
+
+/*CSS for page-footer*/
+.footer{
+	width: 98%;
+	left: 0;
+	bottom: 0;
+	margin-left: 0.7vw;
+	margin-bottom: 1vh;
+	position: absolute;
+	display: flex;	
+	justify-content: center;
+	border: 2px solid lightgrey;
+	border-radius: 1.5vw;
+	box-shadow: 4px 4px 4px grey;	
+}	
+	.footer h6{
+		text-align: center;
+		margin-top: 3.2vh;
+		margin-bottom: 3.2vh;
+		font-size: 1.2rem;
+	}        	
+/*ends here*/
+
+
+/*Media Query for xs sized screens*/
+@media only screen and (max-width: 567px){
+
+	#trigger{
+		font-size: 1.2rem;
+		width: 28vw;
+	}
+
+	#modal-content{
+		width: 80vw;
+		margin-left: 10vw;
+	}
+
+	.modal-header{
+		font-size: 0.8rem;
+		order: 0;
+	}
+	.modal-footer #close{
+		padding: 10px;
+	    width: 25vw;
+	    margin-top: 2vh;
+	    margin-bottom: 2vh;
+	    order: 2;
+	}
+
+	.modal-body #para{
+		font-size: 1.4rem;
+		padding: 2vh 3vw 3vh 3vw;
+		order: 1;
+	}
+}
+/*ends here*/
+
+
+/*Media Query for sm sized screens*/
+@media only screen and (min-width: 568px) and (max-width: 768px){
+	#trigger{
+		width: 15vw;
+	}
+
+	#modal-content{
+		width: 75vw;
+		margin-left: 13vw;
+	}
+	
+	.modal-footer #close{
+		padding: 10px;
+	    width: 15vw;
+	    margin-top: 2vh;
+	    margin-bottom: 2vh;
+	}
+
+	.modal-body #para{
+		font-size: 1.6rem;
+		padding: 2vh 3vw 3vh 3vw;
+	}
+}
+/*ends here*/
+
+
+/*Media Query for md sized screens*/
+@media only screen and (min-width: 769px) and (max-width: 992px){
+	#trigger{
+		width: 15vw;
+	}
+	#modal-content{
+		width: 55vw;
+		margin-left: 24vw;
+	}
+	.modal-body #para{
+		font-size: 1.8rem;
+	}
+	.modal-footer #close{
+		padding: 10px;
+	    width: 12vw;
+	}
+}
+/*ends here*/
