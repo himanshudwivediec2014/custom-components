@@ -139,24 +139,25 @@ body{
 
 /*CSS for page-footer*/
 .footer{
+	background-color: #FEE3AD;
 	width: 98%;
-	left: 0;
 	bottom: 0;
-	margin-left: 0.7vw;
+	left: 0;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+	margin-left: 0.8vw;
 	margin-bottom: 1vh;
 	position: absolute;
-	display: flex;	
-	justify-content: center;
 	border: 2px solid lightgrey;
-	border-radius: 1.5vw;
-	box-shadow: 4px 4px 4px grey;	
-}	
+	border-radius: 1vw;
+	box-shadow: 4px 4px 4px grey;
+	display: flex;
+	justify-content: center;
+}
 	.footer span{
 		text-align: center;
-		margin-top: 2vh;
-		margin-bottom: 2vh;
-		font-size: 1.2rem;
-	}        	
+		font-size: 1.1rem;
+	}       	
 /*ends here*/
 
 
@@ -192,8 +193,8 @@ body{
 	.footer{
 		width: 97%;
 		margin-left: 1vw;
-		padding-top: 1.2vh;
-		padding-bottom: 1.2vh;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
 	}	
 	.footer span{
 		font-size: 1rem;
