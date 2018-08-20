@@ -104,11 +104,11 @@ body{
 		font-size: 1.2rem;		
 	}
 	.footer{
-		width: 97.2%;
+		width: 97%;
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 	}	
 	.footer span{
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 }

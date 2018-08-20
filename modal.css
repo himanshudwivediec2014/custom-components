@@ -192,12 +192,11 @@ body{
 	}
 	.footer{
 		width: 97%;
-		margin-left: 1vw;
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 	}	
 	.footer span{
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 }
 /*ends here*/
